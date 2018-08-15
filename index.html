@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link href="styles/materialize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body,
+        html {
+            height: 100%;
+            background: url(images/astronomy-beautiful-clouds-355465.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .back {
+            /* The image used */
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        nav {
+
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0px 20px;
+        }
+
+        .sidenav{
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .box {
+            margin-top: 20px;
+            height: 1000px;
+        }
+
+        nav li a:hover {
+            background: #1565c0;
+        }
+
+    </style>
+    <title>Dark Brinstar</title>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">DarkBrinstar</a>
+
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="#" class="blue darken-4">Inicio</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="about.html">Acerca</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <button type="button" class="btn-floating btn-large waves-effect waves-light hide-on-med-and-up sidenav-trigger fixed" data-target="slide-out">
+        <i class="material-icons">menu</i>
+    </button>
+    <ul id="slide-out" class="sidenav hide-on-large-only">
+        <li>
+            <li><a href="index.html" class="white-text">Inicio</a></li>
+            <li><a href="#" class="blue darken-4">Tutoriales</a></li>
+            <li><a href="#" class="white-text">Youtube</a></li>
+            <li><a href="about.html" class="white-text">Acerca</a></li>
+            <li><a href="login.html" class="white-text">Iniciar sesión</a></li>
+        </li>
+    </ul>
+</head>
+
+<body class="back pink darken-1">
+
+    <div class="back">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 white-text center-align">
+                    <h1 class="animated fadeInDown">¡Aprende a programar!</h1>
+                    <h3 class="animated fadeInUp delay-1s">No es necesario ser el mejor programador para hacer algo bueno</h3>
+
+                    <center>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="tutoriales.html" class="btn-large deep-purple darken-3 animated fadeInRight delay-2s">Ver tutoriales</a>
+
+                    </center>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="scripts/materialize.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/wow.min.js"></script>
+</body>
+<script>
+    $(document).ready(function() {
+        M.AutoInit();
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: false, // default
+            live: true // default
+        })
+        wow.init();
+    });
+
+</script>
+
+
+
+</html>
